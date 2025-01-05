@@ -17,8 +17,8 @@ h2{
 }
 
 #top_panel{
-    display: inline-block;
-    width: 500px;
+    display: flex;
+    width: 100%;
 }
 
 #colour_display{
@@ -39,27 +39,24 @@ h2{
 }
 
 #slider{
-    width: 250px;
+    width: 30px;
+    height: 100%;
+    box-sizing: border-box;
     display: block;
     padding: 8px 0px;
     margin: 0px;
-    position: relative;
-    top: 111.5px;
-    right: 95px;
-    transform: rotate(270deg);
-    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
     -webkit-appearance: none;
     appearance: none;
-    height: 10px;
     border-radius: 5px;
+    writing-mode: vertical-lr;
 }
 
 #slider::-webkit-slider-thumb{
     -webkit-appearance: none;
-    appearance: none;
     background-image: url("./images/white_square.png");
-    height: 30px;
-    width: 10px;
+    height: 10px;
+    width: 30px;
     cursor: pointer;
 }
 
